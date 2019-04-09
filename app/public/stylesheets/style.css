@@ -1,0 +1,21 @@
+table {
+  font-family: "Operator Mono";
+  font-style: italic;
+  display: block;
+	width: 40%;
+	border-collapse: collapse;
+	overflow: hidden;
+  margin: 40px auto
+  
+}
+table tr th {
+  border: #000 1px solid;
+
+  width: auto;
+  padding: 10px;
+}
+table tr td {
+  border: #000 1px solid;
+  width: auto;
+  padding: 10px;
+}

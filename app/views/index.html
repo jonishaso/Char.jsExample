@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Socket.IO chat</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+    <input type="text" name="from" id="fromtime" />
+    <input type="text" name="end" id="endtime" />
+    <button id="refreshbtn"">refresh</button>
+        <table id=" detail">
+        <tr>
+            <th></th>
+            <th>House Dealing</th>
+            <th>MSB</th>
+            <th>Melbourne BDM</th>
+            <th>Sydney BDM</th>
+        </tr>
+        <tbody>
+            <!-- <tr id = "acc">
+                <td>No. of Opened Accounts</td>
+            </tr> -->
+            <tr id="tra">
+                <td>No. of Trades</td>
+            </tr>
+            <tr id="equ">
+                <td>Volume in AUD</td>
+            </tr>
+            <tr id="pro">
+                <td>Profit in AUD</td>
+            </tr>
+            <!-- <tr>
+                <td>Profit Margin %</td>
+            </tr> -->
+        </tbody>
+        </table>
+        <div style=" display: grid;grid-template-columns: 30% 70%;">
+            <div style=" position: relative; margin:40px auto; width:90%; ">
+                <canvas id="myCharttra" width="200" height="210"></canvas>
+            </div>
+            <div style=" position: relative; margin:40px auto; width:90%; ">
+                <canvas id="myLinetra" width="200" height="90"></canvas>
+            </div>
+
+            <div style=" position: relative; margin:40px auto; width:90%;">
+                <canvas id="myChartpro" width="200" height="210"></canvas>
+            </div>
+            <div style=" position: relative; margin:40px auto; width:90%;">
+                <canvas id="myLinepro" width="200" height="90"></canvas>
+            </div>
+
+            <div style=" position: relative; margin:40px auto; width:90%;">
+                <canvas id="myChartequ" width="200" height="210"></canvas>
+            </div>
+            <div style=" position: relative; margin:40px auto; width:90%;">
+                <canvas id="myLineequ" width="200" height="90"></canvas>
+            </div>
+        </div>
+
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="/javascripts/chart-file.js"></script>
+        <script src="/javascripts/jquery.js"></script>
+        <script src="/javascripts/app.js"></script>
+</body>
+
+</html>

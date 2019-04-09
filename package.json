@@ -1,0 +1,28 @@
+{
+  "name": "es6FxRpt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./app/bin/www.js --exec babel-node --presets babel-preset-env",
+    "start:dev": "babel-node ./app/bin/www.js",
+    "build": "mkdir build && babel --out-dir ./build --source-maps --copy-files ./app"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "ejs": "~2.5.7",
+    "express": "~4.16.0",
+    "morgan": "~1.9.0",
+    "mysql": "^2.16.0",
+    "socket.io": "^2.1.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  }
+}
